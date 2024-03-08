@@ -179,23 +179,6 @@ body {
  }
 
 
-
-/* DROPDOWN MENU */
-.dropdown-menu {
-    position: absolute;
-    right: 2rem;
-    top: 80px;
-    width: 200px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 0.7rem;
-    display: none;
-}
-
-
-
 /* RESPONSIVE DESIGN */
 @media (max-width: 1120px) {
     .home-content p {
@@ -222,6 +205,14 @@ body {
         font-size: 40px;
     }
 
+    .comingsoon-content h1 {
+        font-size: 30px;
+    }
+
+    .comingsoon-content img {
+        width: 50px;
+    }
+
     .home-content h3 {
         font-size: 20px;
     }
@@ -231,13 +222,49 @@ body {
     }
 
     .navbar .links {
-        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        right: 1rem;
+        top: 80px;
+        width: 155px;
+        height: 0px;
+        background: #282828;
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 0.7rem;
+        transition: height 1s ease;
+        visibility: hidden;
+        opacity: 0;
     }
+
+    .navbar .links.active {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        height: 200px;
+    }
+
 
     .navbar .toggle-btn {
         display: block;
     }
+
+    .toggle-btn .bx-x {
+        display: none;
+    }
+
+    .toggle-btn .bx-x.active {
+        display: inline-block;
+    }
+
+    .toggle-btn .bx-menu.active {
+        display: none;
+    }
 }
+
+
 
 @media (max-width: 435px) {
     .home-content h1 {
