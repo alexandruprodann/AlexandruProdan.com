@@ -98,13 +98,14 @@ body {
     font-size: 32px;
     font-weight: 700px;
     color: #bb86fc;
+    margin-bottom: 20px;
 }
 
 .home-content p {
     position: relative;
     font-size: 16px;
-    margin: 10px 0 10px;
-    max-width: 100%;
+    max-width: 70%;
+    margin-top: 5px;
 }
 
 .home-content img {
@@ -128,12 +129,6 @@ body {
     transition: 0.5s;
     margin-top: 50px;
 }
-
-/* .btn-box a:hover,
-.home-social a:hover {
-    background: #00abf0;
-    color: #081b29;
-} */
 
 
 .home-social {
@@ -277,7 +272,7 @@ body {
 
     .home-content p {
         font-size: 13px;
-        max-width: 100%;
+        max-width: 98%;
     }
 
     .home-content img {
