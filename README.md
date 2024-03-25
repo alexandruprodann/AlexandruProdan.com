@@ -5,10 +5,10 @@ This project is a personal website created for fun 😄. It showcases my skills 
 ## Screenshots
 
 #### Desktop:
-![image](https://github.com/alexandruprodann/AlexandruProdan.com/assets/100951219/3db72040-4f41-4d28-a9ac-3907c6f1eb89)
+<img src="https://github.com/alexandruprodann/AlexandruProdan.com/assets/100951219/b04dcae1-5400-4fa2-8e9f-640646727671)" width="734"/>
 
 #### Mobile:
-![image](https://github.com/alexandruprodann/AlexandruProdan.com/assets/100951219/d24d0055-6463-49eb-b2c1-2bcfaedc0846)
+<img src="https://github.com/alexandruprodann/AlexandruProdan.com/assets/100951219/fb49b4eb-fc6b-4f14-a92a-9e64d68d8330" height="633"/>
 
 
 ## Links
