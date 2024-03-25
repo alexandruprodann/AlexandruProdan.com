@@ -9,6 +9,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+    body {
+      /* The hack for Safari */
+      height: -webkit-fill-available;
+    }
+}
 
 body {
     background-color: #222;
@@ -63,7 +70,7 @@ body {
     display: none;
 }
 
-.home, .comingsoon {
+.home, .comingsoon, .about {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -74,12 +81,15 @@ body {
     justify-content: center;
 }
 
-/* Avoid Chrome to see Safari hack */
-@supports (-webkit-touch-callout: none) {
-    body {
-      /* The hack for Safari */
-      height: -webkit-fill-available;
-    }
+.about-content {
+    max-height: 60%;
+    overflow: auto;
+}
+
+.about-content a {
+    color: #bb86fc;
+    text-decoration: underline wavy #FFE74C;
+    font-weight: 500;
 }
 
 .home-content h1 {
@@ -107,6 +117,12 @@ body {
     max-width: 70%;
     margin-top: 5px;
 }
+
+.about-content p {
+    margin: 10px 0px;
+    max-width: 100%;
+}
+
 
 .home-content img {
     width: 50px;
@@ -182,7 +198,8 @@ body {
 }
 
 @media (max-width: 960px) {
-    .home-content h1 {
+    .home-content h1,
+    .about-content h1 {
         font-size: 45px;
     }
 
@@ -196,7 +213,8 @@ body {
 }
 
 @media (max-width: 790px) {
-    .home-content h1 {
+    .home-content h1,
+    .about-content h1 {
         font-size: 40px;
     }
 
@@ -262,7 +280,8 @@ body {
 
 
 @media (max-width: 435px) {
-    .home-content h1 {
+    .home-content h1,
+    .about-content h1 {
         font-size: 20px;
     }
     
@@ -270,7 +289,8 @@ body {
         font-size: 15px;
     }
 
-    .home-content p {
+    .home-content p,
+    .about-content p {
         font-size: 13px;
         max-width: 98%;
     }
