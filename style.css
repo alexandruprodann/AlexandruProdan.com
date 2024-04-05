@@ -75,6 +75,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 10%;
 }
 
@@ -84,7 +85,7 @@ body {
 
 .about-content {
     max-height: 60%;
-    overflow: auto;
+    text-align: center;
 }
 
 .about-content a {
@@ -93,11 +94,16 @@ body {
     font-weight: 500;
 }
 
+
 .home-content h1 {
     position: relative;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.0;
+}
+
+.home-content {
+    text-align: center;
 }
 
 .comingsoon-content h1 {
@@ -113,15 +119,20 @@ body {
 }
 
 .home-content p {
-    position: relative;
     font-size: 16px;
-    max-width: 70%;
     margin-top: 5px;
+    max-width: 70%; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-content p {
     margin: 10px 0px;
     max-width: 100%;
+}
+
+.about-content h1 {
+    text-align: center;
 }
 
 
@@ -150,8 +161,8 @@ body {
 
 .home-social {
     position: absolute;
-    bottom: 80px;
-    width: 120px;
+    bottom: 10%;
+    width: 180px;
     display: flex;
     justify-content: space-between;
 }
@@ -178,22 +189,20 @@ body {
 
 .projects-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     max-width: 1200px;
     justify-content: center;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    height: 25rem;
+    height: 18rem;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-    transition: 0.3s;
+    transition: 0.4s;
     margin-right: 4rem;
 }
 
@@ -204,17 +213,16 @@ body {
 
 .card img {
     width: 300px;
-    height: auto;
+    height: 140px;
     margin-bottom: 1rem;
 }
 
-.card a {
-    font-size: 14px;
+.projects-content a {
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
-    transition: 0.3s;
 }
+
 
 .card p {
     font-size: 12px;
@@ -251,6 +259,17 @@ body {
 
 
 /* RESPONSIVE DESIGN */
+@media (max-width: 1365px) {
+    .projects {
+        padding-top: 300px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+
 @media (max-width: 1120px) {
     .home-content p {
         max-width: 80%;
@@ -258,8 +277,7 @@ body {
 }
 
 @media (max-width: 960px) {
-    .home-content h1,
-    .about-content h1 {
+    .home-content h1 {
         font-size: 45px;
     }
 
@@ -270,11 +288,18 @@ body {
     .home-content p {
         max-width: 100%;
     }
+
+    .projects-content {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        margin-right: 0px;
+    }
 }
 
 @media (max-width: 790px) {
-    .home-content h1,
-    .about-content h1 {
+    .home-content h1 {
         font-size: 40px;
     }
 
@@ -361,5 +386,9 @@ body {
 
     .home-social {
         bottom: 40px;
+    }
+
+    .projects {
+        padding-top: 30em;
     }
 }
