@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-    /* color: #00abf0; -> old blue */
 
 * {
     margin: 0;
@@ -19,8 +18,6 @@
 
 body {
     background-color: #222;
-    /* background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%); */
-    /* background: rgb(34,34,34); */
     color: #ededed;
     overflow-y: auto;
 }
@@ -71,7 +68,7 @@ body {
     display: none;
 }
 
-.home, .comingsoon, .about, .projects {
+.page {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -79,7 +76,7 @@ body {
     padding: 0 10%;
 }
 
-.comingsoon, .projects {
+.projects {
     justify-content: center;
 }
 
@@ -107,14 +104,9 @@ body {
     text-align: center;
 }
 
-.comingsoon-content h1 {
-    font-size: 56px;
-}
-
 .home-content h3 {
     position: relative;
     font-size: 32px;
-    font-weight: 700px;
     color: #bb86fc;
     margin-bottom: 20px;
 }
@@ -192,8 +184,8 @@ body {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    max-width: 1200px;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .card {
@@ -204,7 +196,6 @@ body {
     position: relative;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
     transition: 0.4s;
-    margin-right: 4rem;
 }
 
 .card-content {
@@ -239,11 +230,6 @@ body {
 
 
 
-
-
-
-
-
 /* Fix for iOS hover state stuck after tapping them */
 @media (hover:hover) {
     .btn-box a:hover,
@@ -257,6 +243,8 @@ body {
         color: #bb86fc;
     }
  }
+
+
 
 
 /* RESPONSIVE DESIGN */
@@ -292,10 +280,8 @@ body {
 
     .projects-content {
         flex-direction: column-reverse;
-    }
-
-    .card {
-        margin-right: 0px;
+        align-items: center;
+        padding-top: 30em;
     }
 }
 
@@ -304,19 +290,15 @@ body {
         font-size: 40px;
     }
 
-    .comingsoon-content h1 {
-        font-size: 30px;
-    }
-
-    .comingsoon-content img {
-        width: 50px;
-    }
-
     .home-content h3 {
         font-size: 20px;
     }
 
     .home-content p {
+        max-width: 100%;
+    }
+
+    .about-content {
         max-width: 100%;
     }
 
@@ -344,7 +326,6 @@ body {
         opacity: 1;
         height: 160px;
     }
-
 
     .navbar .toggle-btn {
         display: block;
@@ -378,7 +359,6 @@ body {
     .home-content p,
     .about-content p {
         font-size: 13px;
-        max-width: 98%;
     }
 
     .home-content img {
@@ -387,9 +367,5 @@ body {
 
     .home-social {
         bottom: 40px;
-    }
-
-    .projects {
-        padding-top: 30em;
     }
 }
