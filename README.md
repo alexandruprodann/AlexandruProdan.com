@@ -2,6 +2,8 @@
 
 This project is a personal website created for fun 😄. It showcases my skills in HTML, CSS, and JavaScript and serves as a platform for experimentation and creativity.
 
+- Live Site URL: (https://alexandruprodan.com/)
+
 ## Screenshots
 
 #### Desktop:
@@ -10,10 +12,6 @@ This project is a personal website created for fun 😄. It showcases my skills 
 #### Mobile:
 <img src="https://github.com/alexandruprodann/AlexandruProdan.com/assets/100951219/fb49b4eb-fc6b-4f14-a92a-9e64d68d8330" height="633"/>
 
-
-## Links
-
-- Live Site URL: (https://alexandruprodan.com/)
 
 ## My process
 
