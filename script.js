@@ -27,9 +27,9 @@ function type() {
     if (currentCharIndex < phrases[currentPhraseIndex].length) {
         typewriterElement.textContent += phrases[currentPhraseIndex].charAt(currentCharIndex);
         currentCharIndex++;
-        setTimeout(type, 100); // Adjust typing speed here
+        setTimeout(type, 100);
     } else {
-        setTimeout(deletePhrase, 1500); // Wait before deleting the phrase
+        setTimeout(deletePhrase, 1500);
     }
 }
 
@@ -37,10 +37,10 @@ function deletePhrase() {
     if (currentCharIndex > 0) {
         typewriterElement.textContent = phrases[currentPhraseIndex].substring(0, currentCharIndex - 1);
         currentCharIndex--;
-        setTimeout(deletePhrase, 50); // Adjust deleting speed here
+        setTimeout(deletePhrase, 50);
     } else {
-        currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length; // Move to the next phrase
-        setTimeout(type, 500); // Wait before typing the next phrase
+        currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length; 
+        setTimeout(type, 500);
     }
 }
 
