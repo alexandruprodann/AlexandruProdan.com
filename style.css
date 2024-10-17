@@ -226,8 +226,16 @@ body {
 }
 
 
-
-
+.typewriter {
+    display: inline-block; /* Keep the cursor inline */
+    animation: blink 0.7s step-end infinite; /* Blink animation */
+    border-right: 4px solid #bb86fc; /* Cursor */
+  }
+  
+  @keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #bb86fc; }
+  }
 
 
 /* Fix for iOS hover state stuck after tapping them */
