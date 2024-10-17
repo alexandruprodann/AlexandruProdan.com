@@ -227,9 +227,9 @@ body {
 
 
 .typewriter {
-    display: inline-block; /* Keep the cursor inline */
-    animation: blink 0.7s step-end infinite; /* Blink animation */
-    border-right: 4px solid #bb86fc; /* Cursor */
+    display: inline-block;
+    animation: blink 0.7s step-end infinite; 
+    border-right: 4px solid #bb86fc; 
   }
   
   @keyframes blink {
