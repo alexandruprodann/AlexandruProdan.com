@@ -288,6 +288,10 @@ body {
     .home-content p {
         max-width: 100%;
     }
+    
+    .page {
+        height: 80vh;
+    }
 
     .about-content {
         max-width: 100%;
