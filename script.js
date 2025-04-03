@@ -13,7 +13,7 @@ toggleButton.addEventListener('click', () => {
 });
 
 const phrases = [
-    "QA Automation Tester",
+    "Aspiring QA Automation Tester",
     "Tech Enthusiast",
     "Problem Solver",
     "Human"
